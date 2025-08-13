@@ -1,1 +1,0 @@
-# computacion-grafica-vms2
