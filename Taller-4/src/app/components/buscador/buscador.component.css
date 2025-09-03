@@ -1,0 +1,30 @@
+.buscador {
+  background: #e6f7ff; /* azul pastel */
+  padding: 0.75rem 1.2rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.buscador input {
+  padding: 8px 10px;
+  border: 1px solid #cce7f6;
+  border-radius: 8px;
+  margin-right: 8px;
+  outline: none;
+}
+
+.buscador button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #99ddff;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buscador button:hover {
+  background: #66cfff;
+}

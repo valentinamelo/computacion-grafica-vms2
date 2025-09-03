@@ -1,0 +1,128 @@
+/* ============================
+   Estilos globales Taller 4
+   ============================ */
+
+/* Importación de fuente Nerko One */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+/* ====== Variables globales ====== */
+:root {
+  /* Fuentes */
+  --font-base: 'Arial', sans-serif;
+  --font-alt: 'Nerko One', cursive;
+
+  /* Colores principales (pastel) */
+  --color-bg: #f9f9f9;
+  --color-primary: #ff4900;
+  --color-secondary: #0093ff;
+  --color-accent: #c500ff;
+  --color-link: #001bff;
+  --color-link-visited: #4caf50;
+  --color-link-hover: #ff6600;
+
+  /* Colores tabla */
+  --color-table-header-bg: #000000;
+  --color-table-header-text: #ffffff;
+  --color-table-row-light: #bec1c3;
+  --color-table-row-dark: #045795;
+
+  /* Colores layout (pastel) */
+  --header-bg: #d9b7ff;
+  --logo-bg: #feffa9;
+  --buscador-bg: #e6f7ff;
+  --buscador-btn: #99ddff;
+  --sidebar-bg: #f2d9ec;
+  --content-bg: #cafbff;
+  --footer-bg: #fce1ff;
+
+  /* Sombras y bordes */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-soft: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* ====== Punto 1 ====== */
+
+/* HTML y Body */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+}
+
+/* Título H2 */
+h2 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Párrafos */
+p {
+  margin: 0.5rem 0;
+}
+
+p.parrafo1 {
+  font-size: 1rem; /* 16px */
+  color: var(--color-secondary);
+  font-family: var(--font-base);
+}
+
+p.parrafo2 {
+  font-size: 12px;
+  color: var(--color-accent);
+  font-family: var(--font-alt);
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+th {
+  background-color: var(--color-table-header-bg);
+  color: var(--color-table-header-text);
+  font-size: 1.5rem;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+
+tr:nth-child(2) {
+  background-color: var(--color-table-row-light);
+  color: #000000;
+}
+
+tr:nth-child(3) {
+  background-color: var(--color-table-row-dark);
+  color: #ffffff;
+}
+
+tr:nth-child(4) {
+  background-color: var(--color-table-row-light);
+  color: #000000;
+}

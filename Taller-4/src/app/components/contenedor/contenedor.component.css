@@ -1,0 +1,50 @@
+.contenedor {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  gap: 1rem;
+  padding: 1rem;
+  background: #6daed1; /* azul pastel */
+}
+
+/* Main con dos columnas */
+.main {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* Sidebar fijo + contenido flexible */
+  gap: 1rem;
+}
+
+/* Sidebar */
+.side-wrapper {
+  display: block;
+}
+
+/* Content */
+.content-wrapper {
+  display: block;
+}
+.contenedor {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  gap: 1rem;
+  padding: 1rem;
+  background: #6daed1; /* azul pastel */
+}
+
+/* Main con dos columnas */
+.main {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* Sidebar fijo + contenido flexible */
+  gap: 1rem;
+}
+
+/* Sidebar */
+.side-wrapper {
+  display: block;
+}
+
+/* Content */
+.content-wrapper {
+  display: block;
+}
