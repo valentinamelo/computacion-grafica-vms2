@@ -1,0 +1,64 @@
+/* toast.css */
+
+/* Contenedor de los Toasts */
+.p-toast {
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Cada mensaje individual */
+.p-toast-message {
+    background: #fff0f5; /* Rosa pastel suave */
+    border-left: 6px solid #ff69b4; /* Destacado en rosa intenso según severity */
+    border-radius: 12px;
+    padding: 12px 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mensajes según severidad */
+.p-toast-message-info {
+    border-left-color: #ffb6c1;
+}
+
+.p-toast-message-success {
+    border-left-color: #98fb98; /* Verde pastel para éxito */
+}
+
+.p-toast-message-warn {
+    border-left-color: #ffd700; /* Amarillo pastel para advertencia */
+}
+
+.p-toast-message-error {
+    border-left-color: #ff6b6b; /* Rojo pastel para error */
+}
+
+/* Hover en cada mensaje */
+.p-toast-message:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Títulos y detalles */
+.p-toast-summary {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.p-toast-detail {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Botón de cerrar */
+.p-toast-icon-close {
+    color: #ff69b4;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.p-toast-icon-close:hover {
+    color: #ff1493;
+}

@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Etiqueta del grupo */
+label {
+  color: #d96686; /* rosa fuerte */
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Radio buttons */
+:host ::ng-deep .p-radiobutton .p-radiobutton-box {
+  border: 2px solid #f9c5d1; /* borde rosado pastel */
+  background: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+:host ::ng-deep .p-radiobutton .p-radiobutton-box:hover {
+  border-color: #d96686;
+}
+
+/* Estado seleccionado */
+:host ::ng-deep .p-radiobutton .p-radiobutton-box.p-highlight {
+  background: #f9c5d1;
+  border-color: #d96686;
+}
+
+/* Punto interior del radio */
+:host ::ng-deep .p-radiobutton .p-radiobutton-icon {
+  background-color: #5c3a4a; /* marrón suave */
+}

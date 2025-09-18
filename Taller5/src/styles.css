@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+
+/* Espaciado entre los items del Menubar */
+
+.p-menubar .p-menubar-root-list {
+
+    display: flex !important;
+
+    gap: 32px; /* Espacio entre los items */
+
+}
+
+
+/* Elimina el margen en el último item */
+
+.p-menubar .p-menubar-root-list > .p-menuitem:last-child {
+
+    margin-right: 0;
+
+}
+
+
+/* Espaciado entre icono y texto */
+
+.p-menubar .p-menuitem-link .pi {
+
+    margin-right: 8px;
+
+}
+
+
+/* Espaciado entre icono y texto */
+
+.p-menubar .pi {
+
+    margin-right: 8px;
+
+}

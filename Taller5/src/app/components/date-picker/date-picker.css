@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  color: #d96686; /* rosa Keki Keki */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Input principal del calendario */
+:host ::ng-deep .p-calendar .p-inputtext {
+  border-radius: 1rem;
+  border: 1px solid #f9c5d1; /* rosa pastel */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #5c3a4a; /* marrón suave */
+}
+
+/* Foco en el input */
+:host ::ng-deep .p-calendar .p-inputtext:focus {
+  border-color: #d96686;
+  box-shadow: 0 0 6px rgba(217, 102, 134, 0.4);
+}
+
+/* Panel del calendario */
+:host ::ng-deep .p-datepicker {
+  border-radius: 1rem;
+  border: 1px solid #f9c5d1;
+}
+
+/* Días del calendario */
+:host ::ng-deep .p-datepicker table td > span {
+  border-radius: 50%;
+  color: #5c3a4a;
+}
+
+/* Día seleccionado */
+:host ::ng-deep .p-datepicker table td.p-datepicker-today > span,
+:host ::ng-deep .p-datepicker table td.p-highlight > span {
+  background-color: #f9c5d1 !important;
+  color: #5c3a4a !important;
+}

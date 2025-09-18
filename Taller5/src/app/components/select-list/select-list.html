@@ -1,0 +1,3 @@
+<div class="card flex justify-center">
+    <p-cascadeselect [(ngModel)]="selectedProduct" [options]="products" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['flavors', 'rellenos']" [style]="{ minWidth: '14rem' }" placeholder="Seleccione un producto" />
+</div>

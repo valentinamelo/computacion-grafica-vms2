@@ -1,0 +1,49 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  color: #d96686; /* rosa Keki Keki */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Caja principal */
+:host ::ng-deep .p-cascadeselect {
+  border-radius: 1rem;
+  border: 1px solid #f9c5d1; /* rosa pastel */
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #5c3a4a; /* marrón suave */
+  min-width: 16rem;
+}
+
+/* Foco */
+:host ::ng-deep .p-cascadeselect:focus,
+:host ::ng-deep .p-cascadeselect.p-focus {
+  border-color: #d96686;
+  box-shadow: 0 0 6px rgba(217, 102, 134, 0.4);
+}
+
+/* Panel desplegable */
+:host ::ng-deep .p-cascadeselect-panel {
+  border-radius: 1rem;
+  border: 1px solid #f9c5d1;
+}
+
+/* Opciones */
+:host ::ng-deep .p-cascadeselect-items .p-cascadeselect-item {
+  color: #5c3a4a;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Opción activa o seleccionada */
+:host ::ng-deep .p-cascadeselect-items .p-cascadeselect-item.p-highlight {
+  background-color: #f9c5d1 !important;
+  color: #5c3a4a !important;
+}

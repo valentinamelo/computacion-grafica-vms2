@@ -1,0 +1,52 @@
+<div class="card flex justify-center">
+    <p-toast></p-toast>
+    <p-button (onClick)="show()" label="Enviar comentarios"></p-button>
+</div>
+
+<style>
+/* Contenedor del toast */
+.p-toast {
+    font-family: 'Comic Sans MS', 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* Cada mensaje individual */
+.p-toast-message {
+    background: #fff0f5; /* Rosa pastel suave */
+    border-left: 6px solid #ff69b4;
+    border-radius: 12px;
+    padding: 12px 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover en cada mensaje */
+.p-toast-message:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Títulos y detalles */
+.p-toast-summary {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.p-toast-detail {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Botón de cerrar */
+.p-toast-icon-close {
+    color: #ff69b4;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.p-toast-icon-close:hover {
+    color: #ff1493;
+}
+</style>

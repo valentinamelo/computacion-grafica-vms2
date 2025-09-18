@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* Barra principal */
+:host ::ng-deep .p-menubar {
+  background-color: #f9c5d1; /* rosa pastel */
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 6px rgba(217, 102, 134, 0.15);
+}
+
+/* Items del menú */
+:host ::ng-deep .p-menubar .p-menuitem-link {
+  color: #5c3a4a; /* marrón suave */
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Hover */
+:host ::ng-deep .p-menubar .p-menuitem-link:hover {
+  background-color: #fcd9de; /* rosado más claro */
+  color: #5c3a4a;
+}
+
+/* Submenús */
+:host ::ng-deep .p-submenu-list {
+  border-radius: 0.8rem;
+  border: 1px solid #f9c5d1;
+}
+
+/* Item seleccionado o activo */
+:host ::ng-deep .p-menubar .p-menuitem-link.p-highlight {
+  background-color: #d96686 !important; /* rosa fuerte */
+  color: #fff !important;
+}

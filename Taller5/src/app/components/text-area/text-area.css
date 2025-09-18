@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  color: #d96686; /* rosa Keki Keki */
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Campo de texto */
+:host ::ng-deep .p-text-area {
+  border-radius: 1rem;
+  border: 1px solid #f9c5d1; /* borde rosado pastel */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #5c3a4a; /* marrón suave */
+  width: 100%;
+  max-width: 20rem;
+  transition: 0.2s ease-in-out;
+}
+
+/* Foco en el input */
+:host ::ng-deep .p-text-area:focus {
+  border-color: #d96686;
+  box-shadow: 0 0 6px rgba(217, 102, 134, 0.3);
+  outline: none;
+}

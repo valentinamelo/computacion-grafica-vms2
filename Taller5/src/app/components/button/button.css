@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  color: #d96686; /* rosa Keki Keki */
+  margin-bottom: 1rem;
+}
+
+p-button {
+  background-color: #f9c5d1; /* rosa pastel */
+  color: #5c3a4a; /* marrón suave */
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p-button:hover {
+  background-color: #fcd9de; /* un tono más claro al pasar el mouse */
+}
